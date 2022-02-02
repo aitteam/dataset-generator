@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/tabela.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/isaretler/park.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+albedo_texture = ExtResource( 2 )
+
+[node name="Park" instance=ExtResource( 1 )]
+material/0 = SubResource( 1 )

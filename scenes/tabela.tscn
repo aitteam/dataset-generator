@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/isaretler/tabela_mesh.tres" type="ArrayMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+
+[node name="Tabela" type="MeshInstance"]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )

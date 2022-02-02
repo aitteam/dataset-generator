@@ -1,0 +1,54 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "MeshInstance",
+"class": "Class",
+"language": "GDScript",
+"path": "res://scripts/class.gd"
+}, {
+"base": "Reference",
+"class": "utils",
+"language": "GDScript",
+"path": "res://scripts/utils.gd"
+} ]
+_global_script_class_icons={
+"Class": "",
+"utils": ""
+}
+
+[application]
+
+config/name="Dataset Generator"
+run/main_scene="res://scenes/dataset_generator.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Utils="*res://scripts/utils.gd"
+
+[display]
+
+window/size/width=416
+window/size/height=416
+window/size/resizable=false
+window/size/borderless=true
+window/size/test_width=416
+window/size/test_height=416
+window/vsync/use_vsync=false
+
+[editor_plugins]
+
+enabled=PoolStringArray(  )
+
+[rendering]
+
+quality/filters/msaa=3
+environment/default_environment="res://default_env.tres"
